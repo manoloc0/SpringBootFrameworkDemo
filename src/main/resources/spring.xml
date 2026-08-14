@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- bean definitions here -->
-
-    <bean id="doctor" class="com.tylercadenas.Doctor">
-        <constructor-arg value="MBBS"></constructor-arg>
-    </bean> <!-- Source of bean definition -->
-    <bean id="nurse" class="com.tylercadenas.Nurse"></bean> <!-- Source of bean definition -->
+    <!-- bean deinitions here -->
+    <context:component-scan base-package="com.tylercadenas"></context:component-scan> <!--Sets the base package for component scan-->
+<!--    <bean id="doctor" class="com.tylercadenas.Doctor">-->
+<!--        <constructor-arg value="MBBS"></constructor-arg>-->
+<!--    </bean> &lt;!&ndash; Source of bean definition &ndash;&gt;-->
+<!--    <bean id="nurse" class="com.tylercadenas.Nurse"></bean> &lt;!&ndash; Source of bean definition &ndash;&gt;-->
 
 </beans>

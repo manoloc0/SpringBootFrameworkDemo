@@ -13,9 +13,6 @@ public class Main {
 
         Doctor doctor = context.getBean(Doctor.class);
         doctor.assist();
-        System.out.println(doctor.getQualification());
 
-        Staff nurse = (Nurse) context.getBean("nurse"); //Can get bean via ID as well; need to cast it though
-        nurse.assist();
     }
 }
