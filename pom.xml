@@ -14,4 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>  <!-- We wanted to utilize Spring's IoC to handle object instantiation. This is done by Spring Context. That's a dependency provided by Maven. We add this dependency then click "Sync all Maven Projects" (the refresh Icon) to update the dependency graph.  -->
+            <version>7.0.8</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
