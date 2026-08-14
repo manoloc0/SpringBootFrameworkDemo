@@ -3,7 +3,7 @@ package com.tylercadenas;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Doctor {
+public class Doctor implements Staff {
 
     // Beans are loaded into the container.
     //Qualification qualification; // Tightly coupled -- If you have a doctor, you NEED a qualification. What's better: loose coupling; we shouldn't rely on Qualification
