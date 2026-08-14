@@ -5,5 +5,5 @@
 
     <!-- bean definitions here -->
 
-
+    <bean id="doctor" class="com.tylercadenas.Doctor"></bean>
 </beans>
