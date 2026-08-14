@@ -13,5 +13,8 @@ public class Main {
         doctor.assist();
         doctor.setQualification("MBBS");
         System.out.println(doctor);
+
+        Doctor doctor1 = context.getBean(Doctor.class);
+        System.out.println(doctor1); // We can see when we run this, the same Doctor w/ qualification is printed.
     }
 }
