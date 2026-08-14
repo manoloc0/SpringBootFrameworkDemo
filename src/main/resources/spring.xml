@@ -6,7 +6,7 @@
     <!-- bean definitions here -->
 
     <bean id="doctor" class="com.tylercadenas.Doctor">
-        <property name="qualification" value="MBBS"></property>
+        <constructor-arg value="MBBS"></constructor-arg>
     </bean> <!-- Source of bean definition -->
     <bean id="nurse" class="com.tylercadenas.Nurse"></bean> <!-- Source of bean definition -->
 
