@@ -5,7 +5,9 @@
 
     <!-- bean definitions here -->
 
-    <bean id="doctor" class="com.tylercadenas.Doctor"></bean> <!-- Source of bean definition -->
+    <bean id="doctor" class="com.tylercadenas.Doctor">
+        <property name="qualification" value="MBBS"></property>
+    </bean> <!-- Source of bean definition -->
     <bean id="nurse" class="com.tylercadenas.Nurse"></bean> <!-- Source of bean definition -->
 
 </beans>

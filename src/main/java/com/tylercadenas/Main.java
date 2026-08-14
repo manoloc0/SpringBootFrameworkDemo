@@ -11,8 +11,9 @@ public class Main {
         // Application Context extends Bean factory; there's more features to Application Context
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Staff doctor = context.getBean(Doctor.class);
+        Doctor doctor = context.getBean(Doctor.class);
         doctor.assist();
+        System.out.println(doctor.getQualification());
 
         Staff nurse = (Nurse) context.getBean("nurse"); //Can get bean via ID as well; need to cast it though
         nurse.assist();
