@@ -15,6 +15,6 @@ public class Main {
         System.out.println(doctor);
 
         Doctor doctor1 = context.getBean(Doctor.class);
-        System.out.println(doctor1); // You'll see that qualification is MBBS because Singleton gives you tne SAME Doctor object
+        System.out.println(doctor1);
     }
 }
